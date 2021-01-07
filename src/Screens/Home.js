@@ -11,6 +11,7 @@ import {
 import {quotes} from '../../quotes';
 
 import {styles} from '../../style';
+import SharingQuote from '../functions/SharingQuote';
 // You can import from local files
 
 // import {quotes} from './quotes';
@@ -57,6 +58,7 @@ export default function Home() {
               {quote} {'\n'} - {auth}
             </Text>
           </ScrollView>
+          <SharingQuote quote={quote} auth={auth} />
         </View>
       </View>
 
