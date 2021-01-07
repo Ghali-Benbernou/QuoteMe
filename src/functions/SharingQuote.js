@@ -25,8 +25,7 @@ export default function SharingQuote({quote, auth}) {
   };
   return (
     <View>
-      <Text>share it ! </Text>
-      <View style={{marginTop: 50}}>
+      <View style={{}}>
         <Button onPress={onShare} title="Share" />
       </View>
     </View>

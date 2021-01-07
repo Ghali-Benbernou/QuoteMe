@@ -1,9 +1,10 @@
 export const quotes = 
 [  
-   {  
+   
+    {  
       "text":"See your Today Quote , by Taping on the button !",
       "from":"Ghali .B"
-   },
+    },
     {  
        "text":"The only people who never fail are those who never try.",
        "from":"Ilka Chase"
@@ -1052,10 +1053,7 @@ export const quotes =
        "text":"“Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma",
        "from":"which is living with the results of other people’s thinking. Don’t let the noise of other’s opinions drown out your own inner voice. And most important, have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary.”"
     },
-    {  
-       "text":"“Don’t be cocky. Don’t be flashy. There’s always someone better than you.",
-       "from":"Tony Hsieh, Zappos.com CEO"
-    },
+    
     {  
        "text":"“Don’t take too much advice. Most people who have a lot of advice to give — with a few exceptions — generalize whatever they did. Don’t over-analyze everything. I myself have been guilty of over-thinking problems. Just build things and find out if they work.",
        "from":"Ben Silbermann, co-founder of Pinterest"
@@ -1206,7 +1204,7 @@ export const quotes =
     },
     {  
        "text":"“One of the huge mistakes people make is that they try to force an interest on themselves. You don’t choose your passions; your passions choose you.",
-       "from":"Jeff Bezos, founder and CEO of Amazon.com"
+       "from":"Jeff Bezos, founder and CEO of Amazon"
     },
     {  
        "text":"“Lots of companies don’t succeed over time. What do they fundamentally do wrong? They usually miss the future.",

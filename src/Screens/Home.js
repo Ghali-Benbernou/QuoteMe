@@ -31,31 +31,38 @@ export default function Home() {
     <View style={{flex: 1, backgroundColor: mainColor}}>
       {/* Center View */}
       <View style={{flex: 1, justifyContent: 'center'}}>
+        <View>
+          <Text style={styles.title}>Quote Me !</Text>
+        </View>
         <View
           style={{
             alignItems: 'center',
             justifyContent: 'center',
-            marginVertical: 20,
+            // marginVertical: 20,
+            paddingTop: 50,
+            marginBottom: -2,
           }}>
           <Image style={styles.image} source={require('../../img/logo1.png')} />
-          <View>
-            <Text style={styles.title}>Quote Me !</Text>
-          </View>
         </View>
 
         <View
           style={{
-            height: '20%',
+            height: '25%',
             backgroundColor: 'white',
-            margin: '4%',
+            marginHorizontal: '4%',
             alignItems: 'center',
             justifyContent: 'center',
             borderRadius: 10,
             elevation: 5,
+            paddingHorizontal: 20,
           }}>
-          <ScrollView style={{padding: 20}}>
-            <Text style={{textAlign: 'left'}}>
-              {quote} {'\n'} - {auth}
+          <ScrollView style={{margin: 10}}>
+            <Text
+              style={{textAlign: 'left', fontStyle: 'italic', fontSize: 20}}>
+              {quote} {'\n'}
+            </Text>
+            <Text style={{textAlign: 'right', fontWeight: 'bold'}}>
+              - {auth}
             </Text>
           </ScrollView>
           <SharingQuote quote={quote} auth={auth} />
