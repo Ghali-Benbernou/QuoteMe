@@ -24,57 +24,57 @@ export default function Home() {
 
   const quote = quotes[numberholder].text;
   const auth = quotes[numberholder].from;
-  return (
-    <View style={{flex: 2, backgroundColor: '#111d5e', padding: 30}}>
-      <ScrollView style={{flex: 1, paddingTop: 36, backgroundColor: '#111d5e'}}>
-        <Text style={styles.title}>
-          <Text style={{fontSize: 60, fontFamily: 'Sarpanch-Bold'}}>"</Text>{' '}
-          Quote Me !
-        </Text>
 
-        <Image style={styles.image} source={require('../../img/logo1.png')} />
+  const mainColor = '#111d5e';
+  return (
+    <View style={{flex: 1, backgroundColor: mainColor}}>
+      {/* Center View */}
+      <View style={{flex: 1, justifyContent: 'center'}}>
+        <View
+          style={{
+            alignItems: 'center',
+            justifyContent: 'center',
+            marginVertical: 20,
+          }}>
+          <Image style={styles.image} source={require('../../img/logo1.png')} />
+          <View>
+            <Text style={styles.title}>Quote Me !</Text>
+          </View>
+        </View>
 
         <View
           style={{
-            flexDirection: 'column',
-            borderColor: 'black',
-            borderWidth: 1,
+            height: '20%',
             backgroundColor: 'white',
-            borderRadius: 100 / 4,
+            margin: '4%',
+            alignItems: 'center',
+            justifyContent: 'center',
+            borderRadius: 10,
+            elevation: 5,
           }}>
-          <Text
-            style={{
-              color: 'black',
-              fontSize: 20,
-              padding: 10,
-              fontStyle: 'italic',
-            }}>
-            "{quote}"
-          </Text>
-          <Text style={{color: 'black', marginLeft: 150, fontWeight: 'bold'}}>
-            -{auth}
-          </Text>
+          <ScrollView style={{padding: 20}}>
+            <Text style={{textAlign: 'left'}}>
+              {quote} {'\n'} - {auth}
+            </Text>
+          </ScrollView>
         </View>
-      </ScrollView>
+      </View>
 
+      {/* Bottom View */}
       <TouchableOpacity
-        style={{
-          backgroundColor: 'white',
-          marginBottom: 30,
-          height: 50,
-          width: 200,
-          borderRadius: 100 / 3,
-          alignItems: 'center',
-          justifyContent: 'center',
-          alignSelf: 'center',
-        }}
         onPress={() => {
           setnumberholder(numgenerator());
+        }}
+        style={{
+          backgroundColor: 'white',
+          height: 60,
+          borderRadius: 30,
+          margin: 10,
+          alignItems: 'center',
+          justifyContent: 'center',
         }}>
-        <Text style={styles.text}> Yeeees !</Text>
+        <Text style={{color: mainColor, fontWeight: 'bold'}}>NEW QUOTE</Text>
       </TouchableOpacity>
-      <Text style={styles.paragraph}>Generate a random Quote !</Text>
-      <Text style={styles.paragraph}>No Bad Vibes</Text>
     </View>
   );
 }
