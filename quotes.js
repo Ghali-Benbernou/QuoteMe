@@ -1,9 +1,10 @@
 export const quotes = 
 [  
-   {  
+   
+    {  
       "text":"See your Today Quote , by Taping on the button !",
       "from":"Ghali .B"
-   },
+    },
     {  
        "text":"The only people who never fail are those who never try.",
        "from":"Ilka Chase"
