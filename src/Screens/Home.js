@@ -65,9 +65,16 @@ export default function Home() {
               - {auth}
             </Text>
           </ScrollView>
-          <SharingQuote quote={quote} auth={auth} />
+
+         
+          
         </View>
+        <View>
+             <SharingQuote quote={quote} auth={auth} />
+          </View>
+        
       </View>
+      
 
       {/* Bottom View */}
       <TouchableOpacity
@@ -83,6 +90,7 @@ export default function Home() {
           justifyContent: 'center',
         }}>
         <Text style={{color: mainColor, fontWeight: 'bold'}}>NEW QUOTE</Text>
+        
       </TouchableOpacity>
     </View>
   );

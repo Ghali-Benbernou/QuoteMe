@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, Share, Button} from 'react-native';
+import {Text, View, Share, Button, Image, TouchableOpacity} from 'react-native';
 
 export default function SharingQuote({quote, auth}) {
   const onShare = async () => {
@@ -24,9 +24,15 @@ export default function SharingQuote({quote, auth}) {
     }
   };
   return (
-    <View>
-      <View style={{}}>
-        <Button onPress={onShare} title="Share" />
+    <View style={{flex:1, width:'100%'}}>
+      <View style={{alignItems:'flex-end'}}>
+      <TouchableOpacity  onPress={onShare}>
+      <Image
+          style={{width: 25, height: 25}}
+          source={require('../../img/copy.png')}
+         />
+      </TouchableOpacity>
+         
       </View>
     </View>
   );
