@@ -7,7 +7,9 @@ import {
   ScrollView,
   TouchableOpacity,
   TextInput,
-} from 'react-native';
+  Icon,
+} 
+from 'react-native';
 import {quotes} from '../../quotes';
 
 import {styles} from '../../style';
@@ -69,9 +71,10 @@ export default function Home() {
          
           
         </View>
-        <View>
+        <View style={{}}>
              <SharingQuote quote={quote} auth={auth} />
-          </View>
+        </View>
+        
         
       </View>
       

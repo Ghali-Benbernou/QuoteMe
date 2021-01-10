@@ -24,16 +24,17 @@ export default function SharingQuote({quote, auth}) {
     }
   };
   return (
-    <View style={{flex:1, width:'100%'}}>
-      <View style={{alignItems:'flex-end'}}>
+   
+      <View style={{alignItems:'flex-end', paddingHorizontal:20, marginTop:5}}>
       <TouchableOpacity  onPress={onShare}>
       <Image
-          style={{width: 25, height: 25}}
-          source={require('../../img/copy.png')}
-         />
+          style={{width: 20, height: 20, padding: 15,}}
+          source={require('../../img/copy2.png')} />
       </TouchableOpacity>
-         
+
+      
+      
       </View>
-    </View>
+  
   );
 }
