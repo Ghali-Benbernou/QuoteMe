@@ -35,12 +35,18 @@ export default function SharingQuote({quote, auth}) {
     Clipboard.setString(
       quote + ' - ' + auth,
     ); };
-    
+    const showToastWithGravity = () => {
+      ToastAndroid.showWithGravity(
+        "Quote Copied !",
+        ToastAndroid.SHORT,
+        ToastAndroid.BOTTOM
+      );
+    };
   return (
    
       <View style={{ paddingHorizontal:20, marginTop:5}}>
         <View style={{flexDirection:'row', justifyContent:'space-between'}}>
-        <TouchableOpacity  onPress={copyToClipboard}>
+        <TouchableOpacity  onPress={copyToClipboard, showToastWithGravity}>
       <Image
           style={{width: 35, height: 25,padding:15, marginLeft:30,}}
           source={require('../../img/copy2.png')} />
