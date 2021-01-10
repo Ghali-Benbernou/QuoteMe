@@ -1,5 +1,13 @@
 import React from 'react';
-import {Text, View, Share, Button, Image, TouchableOpacity} from 'react-native';
+import {Text,
+   View,
+    Share,
+     Button,
+      Image,
+       TouchableOpacity,
+      ToastAndroid,} from 'react-native';
+
+import Clipboard from '@react-native-community/clipboard';
 
 export default function SharingQuote({quote, auth}) {
   const onShare = async () => {
@@ -23,16 +31,26 @@ export default function SharingQuote({quote, auth}) {
       alert(error.message);
     }
   };
+  const copyToClipboard = () => {
+    Clipboard.setString(
+      quote + ' - ' + auth,
+    ); };
+    
   return (
    
-      <View style={{alignItems:'flex-end', paddingHorizontal:20, marginTop:5}}>
-      <TouchableOpacity  onPress={onShare}>
+      <View style={{ paddingHorizontal:20, marginTop:5}}>
+        <View style={{flexDirection:'row', justifyContent:'space-between'}}>
+        <TouchableOpacity  onPress={copyToClipboard}>
       <Image
-          style={{width: 20, height: 20, padding: 15,}}
+          style={{width: 35, height: 25,padding:15, marginLeft:30,}}
           source={require('../../img/copy2.png')} />
       </TouchableOpacity>
-
-      
+      <TouchableOpacity  onPress={onShare}>
+      <Image
+          style={{width: 10, height: 10, padding: 12, marginRight:30}}
+          source={require('../../img/share.png')} />
+      </TouchableOpacity>
+        </View>
       
       </View>
   
