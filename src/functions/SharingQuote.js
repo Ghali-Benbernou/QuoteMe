@@ -1,16 +1,16 @@
 import React from 'react';
 import {Text,
-   View,
-    Share,
-     Button,
-      Image,
-       TouchableOpacity,
-      ToastAndroid,} from 'react-native';
+  View,
+  Share,
+  Button,
+  Image,
+  TouchableOpacity,
+  ToastAndroid,} from 'react-native';
 
 import Clipboard from '@react-native-community/clipboard';
 
 export default function SharingQuote({quote, auth}) {
-  const onShare = async () => {
+  async function onShare() {
     try {
       const result = await Share.share({
         message: quote + ' - ' + auth,
@@ -21,7 +21,7 @@ export default function SharingQuote({quote, auth}) {
           console.log('shared with activity type of ' + result.activityType);
         } else {
           // shared
-          console.log('shared');
+          console.log('shared'); 
         }
       } else if (result.action === Share.dismissedAction) {
         // dismissed
@@ -30,11 +30,12 @@ export default function SharingQuote({quote, auth}) {
     } catch (error) {
       alert(error.message);
     }
-  };
+  }
   const copyToClipboard = () => {
     Clipboard.setString(
       quote + ' - ' + auth,
-    ); };
+    );
+    showToastWithGravity() };
     const showToastWithGravity = () => {
       ToastAndroid.showWithGravity(
         "Quote Copied !",
@@ -46,9 +47,11 @@ export default function SharingQuote({quote, auth}) {
    
       <View style={{ paddingHorizontal:20, marginTop:5}}>
         <View style={{flexDirection:'row', justifyContent:'space-between'}}>
-        <TouchableOpacity  onPress={copyToClipboard, showToastWithGravity}>
+        <TouchableOpacity  onPress={ ()=>
+          copyToClipboard() 
+          }>
       <Image
-          style={{width: 35, height: 25,padding:15, marginLeft:30,}}
+          style={{width: 35, height: 15,padding:15, marginLeft:30,}}
           source={require('../../img/copy2.png')} />
       </TouchableOpacity>
       <TouchableOpacity  onPress={onShare}>

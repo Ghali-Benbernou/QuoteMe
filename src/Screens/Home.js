@@ -8,8 +8,11 @@ import {
   TouchableOpacity,
   TextInput,
   Icon,
+  AppRegistry,
+  Dimensions
 } 
 from 'react-native';
+// import { DrawerNavigator } from 'react-navigation';
 import {quotes} from '../../quotes';
 
 import {styles} from '../../style';
@@ -29,6 +32,7 @@ export default function Home() {
   const auth = quotes[numberholder].from;
 
   const mainColor = '#111d5e';
+  
   return (
     <View style={{flex: 1, backgroundColor: mainColor}}>
       {/* Center View */}
