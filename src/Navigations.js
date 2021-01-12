@@ -10,11 +10,13 @@ const Drawer = createDrawerNavigator();
 export default function Navigations() {
     
     return (
-        <NavigationContainer>
-        <Drawer.Navigator initialRouteName="Home">
+       
+        <NavigationContainer  >
+        <Drawer.Navigator initialRouteName="Home" drawerContentOptions={{style:{backgroundColor:'#111d5e',}}}>
           <Drawer.Screen name="Home" component={Home} />
           <Drawer.Screen name="Categories" component={Categories} />
         </Drawer.Navigator>
       </NavigationContainer>
+     
     )
 }

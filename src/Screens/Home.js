@@ -1,3 +1,4 @@
+import { useNavigation } from '@react-navigation/native';
 import React, {useState} from 'react';
 import {
   Text,
@@ -17,6 +18,7 @@ import {quotes} from '../../quotes';
 
 import {styles} from '../../style';
 import SharingQuote from '../functions/SharingQuote';
+import Navigations from '../Navigations';
 // You can import from local files
 
 // import {quotes} from './quotes';
@@ -32,10 +34,17 @@ export default function Home() {
   const auth = quotes[numberholder].from;
 
   const mainColor = '#111d5e';
-  
+  const navigation= useNavigation()
   return (
     <View style={{flex: 1, backgroundColor: mainColor}}>
       {/* Center View */}
+      <View>
+        <Button title={'Menu'} onPress={() => { 
+          navigation.openDrawer()
+        }}/>
+
+        
+      </View>
       <View style={{flex: 1, justifyContent: 'center'}}>
         <View>
           <Text style={styles.title}>Quote Me !</Text>
