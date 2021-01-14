@@ -6,7 +6,7 @@ import {Text,
   Image,
   TouchableOpacity,
   ToastAndroid,} from 'react-native';
-
+  import Ionicons from 'react-native-vector-icons/Ionicons';
 import Clipboard from '@react-native-community/clipboard';
 
 export default function SharingQuote({quote, auth}) {
@@ -50,14 +50,10 @@ export default function SharingQuote({quote, auth}) {
         <TouchableOpacity  onPress={ ()=>
           copyToClipboard() 
           }>
-      <Image
-          style={{width: 35, height: 15,padding:15, marginLeft:30,}}
-          source={require('../../img/copy2.png')} />
+      <Ionicons name="copy-outline" size={30} color="white" />
       </TouchableOpacity>
       <TouchableOpacity  onPress={onShare}>
-      <Image
-          style={{width: 10, height: 10, padding: 12, marginRight:30}}
-          source={require('../../img/share.png')} />
+      <Ionicons name="share-social-sharp" size={30} color="white"  />
       </TouchableOpacity>
         </View>
       
