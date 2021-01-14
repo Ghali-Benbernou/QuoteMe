@@ -1,12 +1,14 @@
 import React from 'react';
-import {Text,
+import {
+  Text,
   View,
   Share,
   Button,
   Image,
   TouchableOpacity,
-  ToastAndroid,} from 'react-native';
-  import Ionicons from 'react-native-vector-icons/Ionicons';
+  ToastAndroid,
+} from 'react-native';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 import Clipboard from '@react-native-community/clipboard';
 
 export default function SharingQuote({quote, auth}) {
@@ -21,7 +23,7 @@ export default function SharingQuote({quote, auth}) {
           console.log('shared with activity type of ' + result.activityType);
         } else {
           // shared
-          console.log('shared'); 
+          console.log('shared');
         }
       } else if (result.action === Share.dismissedAction) {
         // dismissed
@@ -32,32 +34,26 @@ export default function SharingQuote({quote, auth}) {
     }
   }
   const copyToClipboard = () => {
-    Clipboard.setString(
-      quote + ' - ' + auth,
+    Clipboard.setString(quote + ' - ' + auth);
+    showToastWithGravity();
+  };
+  const showToastWithGravity = () => {
+    ToastAndroid.showWithGravity(
+      'Quote Copied !',
+      ToastAndroid.SHORT,
+      ToastAndroid.BOTTOM,
     );
-    showToastWithGravity() };
-    const showToastWithGravity = () => {
-      ToastAndroid.showWithGravity(
-        "Quote Copied !",
-        ToastAndroid.SHORT,
-        ToastAndroid.BOTTOM
-      );
-    };
+  };
   return (
-   
-      <View style={{ paddingHorizontal:20, marginTop:5}}>
-        <View style={{flexDirection:'row', justifyContent:'space-between'}}>
-        <TouchableOpacity  onPress={ ()=>
-          copyToClipboard() 
-          }>
-      <Ionicons name="copy-outline" size={30} color="white" />
-      </TouchableOpacity>
-      <TouchableOpacity  onPress={onShare}>
-      <Ionicons name="share-social-sharp" size={30} color="white"  />
-      </TouchableOpacity>
-        </View>
-      
+    <View style={{paddingHorizontal: 20, marginTop: 5}}>
+      <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
+        <TouchableOpacity onPress={() => copyToClipboard()}>
+          <Ionicons name="copy-outline" size={30} color="white" />
+        </TouchableOpacity>
+        <TouchableOpacity onPress={onShare}>
+          <Ionicons name="share-social-sharp" size={30} color="white" />
+        </TouchableOpacity>
       </View>
-  
+    </View>
   );
 }

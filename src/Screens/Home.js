@@ -1,10 +1,9 @@
-import { useNavigation } from '@react-navigation/native';
+import {useNavigation} from '@react-navigation/native';
 import React, {useState} from 'react';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import {Picker} from '@react-native-picker/picker';
 // import DropDownPicker from "react-native-custom-dropdown";
-// import Icon from 'react-native-vector-icons/Feather';
 import {
   Text,
   View,
@@ -15,16 +14,14 @@ import {
   TextInput,
   AppRegistry,
   Dimensions,
-  
-} 
-from 'react-native';
+} from 'react-native';
 // import { DrawerNavigator } from 'react-navigation';
 import {quotes} from '../../quotes';
 
 import {styles} from '../../style';
 import SharingQuote from '../functions/SharingQuote';
 import Navigations from '../Navigations';
-import { color } from 'react-native-reanimated';
+import {color} from 'react-native-reanimated';
 // You can import from local files
 
 // import {quotes} from './quotes';
@@ -40,60 +37,47 @@ export default function Home() {
   const auth = quotes[numberholder].from;
 
   const mainColor = '#111d5e';
-  const navigation= useNavigation()
+  const navigation = useNavigation();
 
+  const [selectedValue, setSelectedValue] = useState('ALL');
 
-  
-  const [selectedValue, setSelectedValue] = useState("ALL");
-  
-
- 
   return (
     <View style={{flex: 1, backgroundColor: mainColor}}>
       {/* Center View */}
-      <View>
+      <View style={{paddingHorizontal: 20, marginTop: 5}}>
+        <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
+          <TouchableOpacity
+            onPress={() => {
+              navigation.openDrawer();
+            }}
+            style={{padding: 10}}>
+            <Ionicons name="menu" size={40} color="white" />
+          </TouchableOpacity>
 
-
-      
-      
-
-      
-
-      <View style={{ flex: 1, paddingTop: 20}}>
-      <Picker 
-      dropdownIconColor={'white'}
-      style={{height:50,
-       width:150,
-       paddingTop: 40,
-       alignItems: "center",
-       color:'white'
-       }}
-       selectedValue={selectedValue}
-       onValueChange={(itemValue) => setSelectedValue(itemValue)}
-       
-       >
-      
-       <Picker.Item label="ALL" value="ALL" />
-       <Picker.Item label="Entreprenaria" value="Entreprenaria" />
-       <Picker.Item label="Emotional" value="Emotional" />
-       <Picker.Item label="Inspirational" value="Inspirational" />
-       <Picker.Item label="Motivational" value="Motivational" />
-       <Picker.Item label="Happiness" value="Happiness" />
-       <Picker.Item label="Wisdom" value="Wisdom" />
-       <Picker.Item label="Love" value="Love" />
-       <Picker.Item label="Friendship" value="Friendship" />
-      </Picker>
+          <Picker
+            dropdownIconColor={'white'}
+            style={{
+              height: 50,
+              width: 150,
+              paddingTop: 40,
+              alignItems: 'center',
+              color: 'white',
+            }}
+            selectedValue={selectedValue}
+            onValueChange={(itemValue) => setSelectedValue(itemValue)}>
+            <Picker.Item label="ALL" value="ALL" />
+            <Picker.Item label="Entreprenaria" value="Entreprenaria" />
+            <Picker.Item label="Emotional" value="Emotional" />
+            <Picker.Item label="Inspirational" value="Inspirational" />
+            <Picker.Item label="Motivational" value="Motivational" />
+            <Picker.Item label="Happiness" value="Happiness" />
+            <Picker.Item label="Wisdom" value="Wisdom" />
+            <Picker.Item label="Love" value="Love" />
+            <Picker.Item label="Friendship" value="Friendship" />
+          </Picker>
+        </View>
       </View>
 
-     
-      {/* <TouchableOpacity onPress={() => {
-           navigation.openDrawer();
-        }} style={{padding:10}}>
-      <Ionicons name="menu" size={40} color="white" />
-      </TouchableOpacity> */}
-
-        
-      </View>
       <View style={{flex: 1, justifyContent: 'center'}}>
         <View>
           <Text style={styles.title}>Quote Me !</Text>
@@ -129,17 +113,11 @@ export default function Home() {
               - {auth}
             </Text>
           </ScrollView>
-
-         
-          
         </View>
         <View style={{}}>
-             <SharingQuote quote={quote} auth={auth} />
+          <SharingQuote quote={quote} auth={auth} />
         </View>
-        
-        
       </View>
-      
 
       {/* Bottom View */}
       <TouchableOpacity
@@ -153,14 +131,10 @@ export default function Home() {
           margin: 10,
           alignItems: 'center',
           justifyContent: 'center',
-          marginBottom:20 
+          marginBottom: 20,
         }}>
         <Text style={{color: mainColor, fontWeight: 'bold'}}>NEW QUOTE</Text>
-        
       </TouchableOpacity>
-
-      
-
     </View>
   );
 }
