@@ -27,9 +27,10 @@ export const styles = StyleSheet.create({
     color: '#111d5e',
   },
   title: {
-    fontSize: 25,
+    fontSize: 24,
     fontWeight: 'bold',
     textAlign: 'center',
     color: 'white',
+    lineHeight: 28,
   },
 });

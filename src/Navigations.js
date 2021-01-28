@@ -18,7 +18,7 @@ export default function Navigations() {
           inactiveTintColor: 'white',
         }}>
         <Drawer.Screen name="Home" component={Home} />
-        <Drawer.Screen name="Categories" component={Categories} />
+        <Drawer.Screen name="About" component={Categories} />
       </Drawer.Navigator>
     </NavigationContainer>
   );

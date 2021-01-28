@@ -1,22 +1,36 @@
 import React from 'react';
 import {View, Text} from 'react-native';
+import {useNavigation} from '@react-navigation/native';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 import {FlatList, TouchableOpacity} from 'react-native-gesture-handler';
 
 export default function Categories() {
   const Categ = [
     {
-      title: 'First Item',
+      title: 'GitHub',
     },
     {
-      title: 'Second Item',
+      title: 'Web Page',
     },
     {
-      title: 'Third Item',
+      title: 'Contact',
     },
   ];
+  const navigation = useNavigation();
   return (
     <View>
-      <Text>Category screen</Text>
+      <View style={{paddingHorizontal: 20, marginTop: 5}}>
+        <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
+          <TouchableOpacity
+            onPress={() => {
+              navigation.openDrawer();
+            }}
+            style={{padding: 10}}>
+            <Ionicons name="menu" size={40} color="#111d5e" />
+          </TouchableOpacity>
+        </View>
+      </View>
+
       <FlatList
         keyExtractor={(item, index) => index.toString()}
         data={Categ}

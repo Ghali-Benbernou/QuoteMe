@@ -44,22 +44,22 @@ export default function Home() {
   return (
     <View style={{flex: 1, backgroundColor: mainColor}}>
       {/* Center View */}
-      <View style={{paddingHorizontal: 20, marginTop: 5}}>
+      <View style={{paddingVertical: 16, paddingHorizontal: 24}}>
         <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
           <TouchableOpacity
             onPress={() => {
               navigation.openDrawer();
             }}
-            style={{padding: 10}}>
+            // style={{padding: 10}}
+          >
             <Ionicons name="menu" size={40} color="white" />
           </TouchableOpacity>
 
           <Picker
             dropdownIconColor={'white'}
             style={{
-              height: 50,
-              width: 150,
-              paddingTop: 40,
+              height: 48,
+              width: 112,
               alignItems: 'center',
               color: 'white',
             }}
@@ -78,7 +78,7 @@ export default function Home() {
         </View>
       </View>
 
-      <View style={{flex: 1, justifyContent: 'center'}}>
+      <View style={{flex: 1, justifyContent: 'center', padding: 32}}>
         <View>
           <Text style={styles.title}>Quote Me !</Text>
         </View>
@@ -86,55 +86,95 @@ export default function Home() {
           style={{
             alignItems: 'center',
             justifyContent: 'center',
-            // marginVertical: 20,
             paddingTop: 50,
-            marginBottom: -2,
           }}>
-          <Image style={styles.image} source={require('../../img/logo1.png')} />
+          <Image style={styles.image} source={require('../../img/logo2.png')} />
         </View>
 
         <View
           style={{
             height: '25%',
             backgroundColor: 'white',
-            marginHorizontal: '4%',
+
             alignItems: 'center',
             justifyContent: 'center',
-            borderRadius: 10,
-            elevation: 5,
-            paddingHorizontal: 20,
+            borderRadius: 16,
+            elevation: 4,
+            padding: 24,
           }}>
-          <ScrollView style={{margin: 10}}>
-            <Text
-              style={{textAlign: 'left', fontStyle: 'italic', fontSize: 20}}>
-              {quote} {'\n'}
-            </Text>
-            <Text style={{textAlign: 'right', fontWeight: 'bold'}}>
-              - {auth}
-            </Text>
+          <ScrollView
+            style={{
+              minHeight: '100%',
+            }}>
+            <View
+              style={{
+                minHeight: '100%',
+                display: 'flex',
+                flexDirection: 'column',
+              }}>
+              <View
+                style={{
+                  flex: 1,
+                }}>
+                <Text
+                  style={{
+                    textAlign: 'left',
+                    fontStyle: 'italic',
+                    fontSize: 16,
+                    lineHeight: 20,
+                    fontWeight: '500',
+                    // paddingVertical: 4,
+                  }}>
+                  {quote}
+                </Text>
+              </View>
+              <Text
+                style={{
+                  textAlign: 'right',
+                  fontWeight: '400',
+                  fontSize: 14,
+                  lineHeight: 20,
+                  paddingTop: 8,
+                }}>
+                - {auth}
+              </Text>
+            </View>
           </ScrollView>
         </View>
-        <View style={{}}>
+        <View>
           <SharingQuote quote={quote} auth={auth} />
         </View>
-      </View>
+        <View style={{height: 56, width: 1}}></View>
 
-      {/* Bottom View */}
-      <TouchableOpacity
-        onPress={() => {
-          setnumberholder(numgenerator());
-        }}
-        style={{
-          backgroundColor: 'white',
-          height: 60,
-          borderRadius: 30,
-          margin: 10,
-          alignItems: 'center',
-          justifyContent: 'center',
-          marginBottom: 20,
-        }}>
-        <Text style={{color: mainColor, fontWeight: 'bold'}}>NEW QUOTE</Text>
-      </TouchableOpacity>
+        {/* Bottom View */}
+        <TouchableOpacity
+          onPress={() => {
+            setnumberholder(numgenerator());
+          }}
+          style={{
+            backgroundColor: 'white',
+            height: 56,
+            borderRadius: 16,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            elevation: 4,
+          }}>
+          <Text
+            style={{
+              color: mainColor,
+
+              textAlign: 'left',
+
+              fontSize: 15,
+              lineHeight: 20,
+              fontWeight: '500',
+            }}>
+            NEW QUOTE
+          </Text>
+        </TouchableOpacity>
+        <View style={{height: 24, width: 1}}></View>
+      </View>
     </View>
   );
 }
