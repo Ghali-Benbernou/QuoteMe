@@ -16,7 +16,7 @@ import {
   Dimensions,
 } from 'react-native';
 // import { DrawerNavigator } from 'react-navigation';
-import {quotes} from '../../quotes';
+import {ALL, Love} from '../../quotes';
 
 import {styles} from '../../style';
 import SharingQuote from '../functions/SharingQuote';
@@ -25,21 +25,21 @@ import {color} from 'react-native-reanimated';
 // You can import from local files
 
 // import {quotes} from './quotes';
-function numgenerator() {
-  var randomNumber = Math.floor(Math.random() * 320) + 1;
-  return randomNumber;
-}
 
 export default function Home() {
+  const [selectedValue, setSelectedValue] = useState(ALL);
+  function numgenerator() {
+    var randomNumber = Math.floor(Math.random() * selectedValue.length);
+    return randomNumber;
+  }
   const [numberholder, setnumberholder] = useState(0);
 
-  const quote = quotes[numberholder].text;
-  const auth = quotes[numberholder].from;
+  const quote = selectedValue[numberholder].text;
+  const auth = selectedValue[numberholder].from;
+  const img = selectedValue[numberholder].img;
 
   const mainColor = '#111d5e';
   const navigation = useNavigation();
-
-  const [selectedValue, setSelectedValue] = useState('ALL');
 
   return (
     <View style={{flex: 1, backgroundColor: mainColor}}>
@@ -65,14 +65,15 @@ export default function Home() {
             }}
             selectedValue={selectedValue}
             onValueChange={(itemValue) => setSelectedValue(itemValue)}>
-            <Picker.Item label="ALL" value="ALL" />
+            <Picker.Item label="ALL" value={ALL} />
+            <Picker.Item label="Love" value={Love} />
             <Picker.Item label="Entreprenaria" value="Entreprenaria" />
             <Picker.Item label="Emotional" value="Emotional" />
             <Picker.Item label="Inspirational" value="Inspirational" />
             <Picker.Item label="Motivational" value="Motivational" />
             <Picker.Item label="Happiness" value="Happiness" />
             <Picker.Item label="Wisdom" value="Wisdom" />
-            <Picker.Item label="Love" value="Love" />
+
             <Picker.Item label="Friendship" value="Friendship" />
           </Picker>
         </View>
@@ -88,7 +89,7 @@ export default function Home() {
             justifyContent: 'center',
             paddingTop: 50,
           }}>
-          <Image style={styles.image} source={require('../../img/logo2.png')} />
+          <Image style={styles.image} source={{uri: img}} />
         </View>
 
         <View

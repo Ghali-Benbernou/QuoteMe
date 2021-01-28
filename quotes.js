@@ -1,8 +1,16 @@
-export const quotes = [
+export const ALL = [
   {
-    text: 'See your Today Quote , by Taping on the button !',
+    text: 'See your Today text , by Taping on the button !',
     from: 'Ghali .B',
+    img:
+      'https://pbs.twimg.com/profile_images/1117450917404663808/X959lbVA.png',
   },
+  {
+    text: 'A person who never made a mistake never tried anything new.',
+    from: ' Albert Einstein',
+    img: 'https://telegram.org/file/811140981/1/9ypk7z_8T4Q/4381a7a74256fe0b9b',
+  },
+
   {
     text: 'The only people who never fail are those who never try.',
     from: 'Ilka Chase',
@@ -30,6 +38,7 @@ export const quotes = [
   {
     text: 'Imagination is more important than knowledge.',
     from: 'Albert Einstein',
+    img: 'https://telegram.org/file/811140981/1/9ypk7z_8T4Q/4381a7a74256fe0b9b',
   },
   {
     text:
@@ -339,7 +348,7 @@ export const quotes = [
   },
   {
     text: 'Entrepreneurship is neither a science nor an art. It is a practice.',
-    from: 'Peter Drucker, management consultant, educator, and author.',
+    from: 'Peter Drucker, management consultant, educator, and from.',
   },
   {
     text:
@@ -358,7 +367,7 @@ export const quotes = [
   {
     text:
       'Positive thinking will let you do everything better than negative thinking will.',
-    from: 'Zig Ziglar, author, salesman, and motivational speaker.',
+    from: 'Zig Ziglar, from, salesman, and motivational speaker.',
   },
   {
     text: '“I’m not afraid of dying, I’m afraid of not trying.”',
@@ -366,7 +375,7 @@ export const quotes = [
   },
   {
     text: 'Whatever the mind can conceive and believe, the mind can achieve.',
-    from: 'Dr. Napoleon Hill, author of Think and Grow Rich.',
+    from: 'Dr. Napoleon Hill, from of Think and Grow Rich.',
   },
   {
     text: 'The longer you’re not taking action the more money you’re losing',
@@ -424,7 +433,7 @@ export const quotes = [
   {
     text:
       'To never forget that the most important thing in life is the quality of life we lead',
-    from: 'Quoted by Tony Hsieh on Retireat21',
+    from: 'textd by Tony Hsieh on Retireat21',
   },
   {
     text: 'Its better to own the racecourse then the race horse',
@@ -1056,6 +1065,7 @@ export const quotes = [
     text:
       '“Try not to be a man of success, but rather try to become a man of value.',
     from: 'Albert Einstein',
+    img: 'https://telegram.org/file/811140981/1/9ypk7z_8T4Q/4381a7a74256fe0b9b',
   },
   {
     text: '“You won’t get anything unless you have the vision to imagine it.',
@@ -1170,7 +1180,7 @@ export const quotes = [
   },
   {
     text: '“When times are bad is when the real entrepreneurs emerge.',
-    from: 'Robert Kiyosaki, author of Rich Dad Poor Dad',
+    from: 'Robert Kiyosaki, from of Rich Dad Poor Dad',
   },
   {
     text:
@@ -1209,7 +1219,7 @@ export const quotes = [
   {
     text:
       '“Associate yourself with people of good quality, for it is better to be alone than in bad company.',
-    from: 'Booker T. Washington, Educator and author',
+    from: 'Booker T. Washington, Educator and from',
   },
   {
     text:
@@ -1224,7 +1234,7 @@ export const quotes = [
   {
     text:
       '“Statistics suggest that when customers complain, business owners and managers ought to get excited about it. The complaining customer represents a huge opportunity for more business.',
-    from: 'Zig Ziglar, author and motivational speaker',
+    from: 'Zig Ziglar, from and motivational speaker',
   },
   {
     text:
@@ -1234,7 +1244,7 @@ export const quotes = [
   {
     text:
       '“Formal education will make you a living; self-education will make you a fortune.',
-    from: 'Jim Rohn, author and speaker',
+    from: 'Jim Rohn, from and speaker',
   },
   {
     text:
@@ -1263,7 +1273,7 @@ export const quotes = [
   {
     text:
       '“Twenty years from now, you will be more disappointed by the things that you didn’t do than by the ones you did do, so throw off the bowlines, sail away from safe harbor, catch the trade winds in your sails. Explore, Dream, Discover.',
-    from: 'Mark Twain, author',
+    from: 'Mark Twain, from',
   },
   {
     text:
@@ -1278,7 +1288,7 @@ export const quotes = [
   {
     text:
       '“For all of the most important things, the timing always sucks. Waiting for a good time to quit your job? The stars will never align and the traffic lights of life will never all be green at the same time. The universe doesn’t conspire against you, but it doesn’t go out of its way to line up the pins either. Conditions are never perfect. “Someday is a disease that will take your dreams to the grave with you. Pro and con lists are just as bad. If it’s important to you and you want to do it “eventually, just do it and correct course along the way.',
-    from: 'Timothy Ferriss, author of The 4-Hour Work Week',
+    from: 'Timothy Ferriss, from of The 4-Hour Work Week',
   },
   {
     text:
@@ -1295,7 +1305,7 @@ export const quotes = [
   },
   {
     text: '“Whatever the mind can conceive and believe, the mind can achieve.',
-    from: 'Dr. Napoleon Hill, author of Think and Grow Rich',
+    from: 'Dr. Napoleon Hill, from of Think and Grow Rich',
   },
   {
     text:
@@ -1332,7 +1342,7 @@ export const quotes = [
   {
     text: '“This defines entrepreneur and entrepreneurship',
     from:
-      'the entrepreneur always searches for change, responds to it, and exploits it as an opportunity.”― Peter F. Drucker, educator and author',
+      'the entrepreneur always searches for change, responds to it, and exploits it as an opportunity.”― Peter F. Drucker, educator and from',
   },
   {
     text:
@@ -1361,11 +1371,11 @@ export const quotes = [
   },
   {
     text: '“If you cannot do great things, do small things in a great way.',
-    from: 'Napoleon Hill, author',
+    from: 'Napoleon Hill, from',
   },
   {
     text: '“Success is not what you have, but who you are.',
-    from: 'Bo Bennet, author and entreprenuer',
+    from: 'Bo Bennet, from and entreprenuer',
   },
   {
     text:
@@ -1443,7 +1453,7 @@ export const quotes = [
   {
     text:
       '“There’s no shortage of remarkable ideas, what’s missing is the will to execute them.',
-    from: 'Seth Godin, author and speaker',
+    from: 'Seth Godin, from and speaker',
   },
   {
     text:
@@ -1459,6 +1469,7 @@ export const quotes = [
     text:
       '“Everyone is a genius. But if you judge a fish by its ability to climb a tree, it will spend its whole life believing it is stupid.',
     from: 'Albert Einstein, Theoretical Physicist',
+    img: 'https://telegram.org/file/811140981/1/9ypk7z_8T4Q/4381a7a74256fe0b9b',
   },
   {
     text:
@@ -1472,7 +1483,7 @@ export const quotes = [
   {
     text:
       '“I am not a product of my circumstances. I am a product of my decisions.',
-    from: 'Stephen Covey, author and businessman',
+    from: 'Stephen Covey, from and businessman',
   },
   {
     text:
@@ -1488,5 +1499,472 @@ export const quotes = [
     text:
       '“You may be disappointed if you fail, but you are doomed if you don’t try.',
     from: 'Beverly Sills, operatic soprano',
+  },
+  {
+    text: 'Life isn’t about getting and having, it’s about giving and being.',
+    from: 'Kevin Kruse',
+  },
+  {
+    text: 'Whatever the mind of man can conceive and believe, it can achieve.',
+    from: 'Napoleon Hill',
+  },
+  {
+    text: 'Strive not to be a success, but rather to be of value.',
+    from: 'Albert Einstein',
+    img: 'https://telegram.org/file/811140981/1/9ypk7z_8T4Q/4381a7a74256fe0b9b',
+  },
+  {
+    text:
+      'Two roads diverged in a wood, and I—I took the one less traveled by, And that has made all the difference.',
+    from: 'Robert Frost',
+  },
+  {
+    text: 'I attribute my success to this: I never gave or took any excuse.',
+    from: 'Florence Nightingale',
+  },
+  {
+    text: 'You miss 100% of the shots you don’t take.',
+    from: 'Wayne Gretzky',
+  },
+  {
+    text:
+      'I’ve missed more than 9000 shots in my career. I’ve lost almost 300 games. 26 times I’ve been trusted to take the game winning shot and missed. I’ve failed over and over and over again in my life. And that is why I succeed.',
+    from: 'Michael Jordan',
+  },
+  {
+    text:
+      'The most difficult thing is the decision to act, the rest is merely tenacity.',
+    from: 'Amelia Earhart',
+  },
+  {
+    text: 'Every strike brings me closer to the next home run.',
+    from: 'Babe Ruth',
+  },
+  {
+    text: 'Definiteness of purpose is the starting point of all achievement.',
+    from: 'W. Clement Stone',
+  },
+  {
+    text: 'We must balance conspicuous consumption with conscious capitalism.',
+    from: 'Kevin Kruse',
+  },
+  {
+    text: 'Life is what happens to you while you’re busy making other plans.',
+    from: 'John Lennon',
+  },
+  {
+    text: 'We become what we think about.',
+    from: 'Earl Nightingale',
+  },
+  {
+    text:
+      'Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do, so throw off the bowlines, sail away from safe harbor, catch the trade winds in your sails.  Explore, Dream, Discover.',
+    from: 'Mark Twain',
+  },
+  {
+    text: 'Life is 10% what happens to me and 90% of how I react to it.',
+    from: 'Charles Swindoll',
+  },
+  {
+    text:
+      'The most common way people give up their power is by thinking they don’t have any.',
+    from: 'Alice Walker',
+  },
+  {
+    text: 'The mind is everything. What you think you become.',
+    from: 'Buddha',
+  },
+  {
+    text:
+      'The best time to plant a tree was 20 years ago. The second best time is now.',
+    from: 'Chinese Proverb',
+  },
+  {
+    text: 'An unexamined life is not worth living.',
+    from: 'Socrates',
+  },
+  {
+    text: 'Eighty percent of success is showing up.',
+    from: 'Woody Allen',
+  },
+  {
+    text: 'Your time is limited, so don’t waste it living someone else’s life.',
+    from: 'Steve Jobs',
+  },
+  {
+    text: 'Winning isn’t everything, but wanting to win is.',
+    from: 'Vince Lombardi',
+  },
+  {
+    text:
+      'I am not a product of my circumstances. I am a product of my decisions.',
+    from: 'Stephen Covey',
+  },
+  {
+    text:
+      'Every child is an artist.  The problem is how to remain an artist once he grows up.',
+    from: 'Pablo Picasso',
+  },
+  {
+    text:
+      'You can never cross the ocean until you have the courage to lose sight of the shore.',
+    from: 'Christopher Columbus',
+  },
+  {
+    text:
+      'I’ve learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.',
+    from: 'Maya Angelou',
+  },
+  {
+    text: 'Either you run the day, or the day runs you.',
+    from: 'Jim Rohn',
+  },
+  {
+    text: 'Whether you think you can or you think you can’t, you’re right.',
+    from: 'Henry Ford',
+  },
+  {
+    text:
+      'The two most important days in your life are the day you are born and the day you find out why.',
+    from: 'Mark Twain',
+  },
+  {
+    text:
+      'Whatever you can do, or dream you can, begin it.  Boldness has genius, power and magic in it.',
+    from: 'Johann Wolfgang von Goethe',
+  },
+  {
+    text: 'The best revenge is massive success.',
+    from: 'Frank Sinatra',
+  },
+  {
+    text:
+      'People often say that motivation doesn’t last. Well, neither does bathing.  That’s why we recommend it daily.',
+    from: 'Zig Ziglar',
+  },
+  {
+    text: 'Life shrinks or expands in proportion to one’s courage.',
+    from: 'Anais Nin',
+  },
+  {
+    text:
+      'If you hear a voice within you say “you cannot paint,” then by all means paint and that voice will be silenced.',
+    from: 'Vincent Van Gogh',
+  },
+  {
+    text:
+      'There is only one way to avoid criticism: do nothing, say nothing, and be nothing.',
+    from: 'Aristotle',
+  },
+  {
+    text:
+      'Ask and it will be given to you; search, and you will find; knock and the door will be opened for you.',
+    from: 'Jesus',
+  },
+  {
+    text:
+      'The only person you are destined to become is the person you decide to be.',
+    from: 'Ralph Waldo Emerson',
+  },
+  {
+    text:
+      'Go confidently in the direction of your dreams.  Live the life you have imagined.',
+    from: 'Henry David Thoreau',
+  },
+  {
+    text:
+      'When I stand before God at the end of my life, I would hope that I would not have a single bit of talent left and could say, I used everything you gave me.',
+    from: 'Erma Bombeck',
+  },
+  {
+    text:
+      'Few things can help an individual more than to place responsibility on him, and to let him know that you trust him.',
+    from: 'Booker T. Washington',
+  },
+  {
+    text:
+      'Certain things catch your eye, but pursue only those that capture the heart.',
+    from: ' Ancient Indian Proverb',
+  },
+  {
+    text: 'Believe you can and you’re halfway there.',
+    from: 'Theodore Roosevelt',
+  },
+  {
+    text: 'Everything you’ve ever wanted is on the other side of fear.',
+    from: 'George Addair',
+  },
+  {
+    text:
+      'We can easily forgive a child who is afraid of the dark; the real tragedy of life is when men are afraid of the light.',
+    from: 'Plato',
+  },
+  {
+    text: 'Teach thy tongue to say, “I do not know,” and thous shalt progress.',
+    from: 'Maimonides',
+  },
+  {
+    text: 'Start where you are. Use what you have.  Do what you can.',
+    from: 'Arthur Ashe',
+  },
+  {
+    text:
+      'When I was 5 years old, my mother always told me that happiness was the key to life.  When I went to school, they asked me what I wanted to be when I grew up.  I wrote down ‘happy’.  They told me I didn’t understand the assignment, and I told them they didn’t understand life.',
+    from: 'John Lennon',
+  },
+  {
+    text: 'Fall seven times and stand up eight.',
+    from: 'Japanese Proverb',
+  },
+  {
+    text:
+      'When one door of happiness closes, another opens, but often we look so long at the closed door that we do not see the one that has been opened for us.',
+    from: 'Helen Keller',
+  },
+  {
+    text: 'Everything has beauty, but not everyone can see.',
+    from: 'Confucius',
+  },
+  {
+    text:
+      'How wonderful it is that nobody need wait a single moment before starting to improve the world.',
+    from: 'Anne Frank',
+  },
+  {
+    text: 'When I let go of what I am, I become what I might be.',
+    from: 'Lao Tzu',
+  },
+  {
+    text:
+      'Life is not measured by the number of breaths we take, but by the moments that take our breath away.',
+    from: 'Maya Angelou',
+  },
+  {
+    text:
+      'Happiness is not something readymade.  It comes from your own actions.',
+    from: 'Dalai Lama',
+  },
+  {
+    text:
+      'If you’re offered a seat on a rocket ship, don’t ask what seat! Just get on.',
+    from: 'Sheryl Sandberg',
+  },
+  {
+    text:
+      'First, have a definite, clear practical ideal; a goal, an objective. Second, have the necessary means to achieve your ends; wisdom, money, materials, and methods. Third, adjust all your means to that end.',
+    from: 'Aristotle',
+  },
+  {
+    text: 'If the wind will not serve, take to the oars.',
+    from: 'Latin Proverb',
+  },
+  {
+    text:
+      'You can’t fall if you don’t climb.  But there’s no joy in living your whole life on the ground.',
+    from: 'Unknown',
+  },
+  {
+    text:
+      'We must believe that we are gifted for something, and that this thing, at whatever cost, must be attained.',
+    from: 'Marie Curie',
+  },
+  {
+    text:
+      'Too many of us are not living our dreams because we are living our fears.',
+    from: 'Les Brown',
+  },
+  {
+    text:
+      'Challenges are what make life interesting and overcoming them is what makes life meaningful.',
+    from: 'Joshua J. Marine',
+  },
+  {
+    text: 'If you want to lift yourself up, lift up someone else.',
+    from: 'Booker T. Washington',
+  },
+  {
+    text:
+      'I have been impressed with the urgency of doing. Knowing is not enough; we must apply. Being willing is not enough; we must do.',
+    from: 'Leonardo da Vinci',
+  },
+  {
+    text:
+      'Limitations live only in our minds.  But if we use our imaginations, our possibilities become limitless.',
+    from: 'Jamie Paolinetti',
+  },
+  {
+    text:
+      'You take your life in your own hands, and what happens? A terrible thing, no one to blame.',
+    from: 'Erica Jong',
+  },
+  {
+    text:
+      'What’s money? A man is a success if he gets up in the morning and goes to bed at night and in between does what he wants to do.',
+    from: 'Bob Dylan',
+  },
+  {
+    text: 'I didn’t fail the test. I just found 100 ways to do it wrong.',
+    from: 'Benjamin Franklin',
+  },
+  {
+    text:
+      'In order to succeed, your desire for success should be greater than your fear of failure.',
+    from: 'Bill Cosby',
+  },
+
+  {
+    text:
+      'The person who says it cannot be done should not interrupt the person who is doing it.',
+    from: 'Chinese Proverb',
+  },
+  {
+    text: 'There are no traffic jams along the extra mile.',
+    from: 'Roger Staubach',
+  },
+  {
+    text: 'It is never too late to be what you might have been.',
+    from: 'George Eliot',
+  },
+  {
+    text: 'You become what you believe.',
+    from: 'Oprah Winfrey',
+  },
+  {
+    text: 'I would rather die of passion than of boredom.',
+    from: 'Vincent van Gogh',
+  },
+  {
+    text:
+      'A truly rich man is one whose children run into his arms when his hands are empty.',
+    from: 'Unknown',
+  },
+  {
+    text:
+      'It is not what you do for your children, but what you have taught them to do for themselves, that will make them successful human beings.',
+    from: 'Ann Landers',
+  },
+  {
+    text:
+      'If you want your children to turn out well, spend twice as much time with them, and half as much money.',
+    from: 'Abigail Van Buren',
+  },
+  {
+    text:
+      'Build your own dreams, or someone else will hire you to build theirs.',
+    from: 'Farrah Gray',
+  },
+  {
+    text:
+      'The battles that count aren’t the ones for gold medals. The struggles within yourself–the invisible battles inside all of us–that’s where it’s at.',
+    from: 'Jesse Owens',
+  },
+  {
+    text: 'Education costs money.  But then so does ignorance.',
+    from: 'Sir Claus Moser',
+  },
+  {
+    text:
+      'I have learned over the years that when one’s mind is made up, this diminishes fear.',
+    from: 'Rosa Parks',
+  },
+  {
+    text: 'It does not matter how slowly you go as long as you do not stop.',
+    from: 'Confucius',
+  },
+  {
+    text:
+      'If you look at what you have in life, you’ll always have more. If you look at what you don’t have in life, you’ll never have enough.',
+    from: 'Oprah Winfrey',
+  },
+  {
+    text:
+      'Remember that not getting what you want is sometimes a wonderful stroke of luck.',
+    from: 'Dalai Lama',
+  },
+  {
+    text: 'You can’t use up creativity.  The more you use, the more you have.',
+    from: 'Maya Angelou',
+  },
+  {
+    text: 'Dream big and dare to fail.',
+    from: 'Norman Vaughan',
+  },
+  {
+    text:
+      'Our lives begin to end the day we become silent about things that matter.',
+    from: 'Martin Luther King Jr.',
+  },
+  {
+    text: 'Do what you can, where you are, with what you have.',
+    from: 'Teddy Roosevelt',
+  },
+  {
+    text:
+      'If you do what you’ve always done, you’ll get what you’ve always gotten.',
+    from: 'Tony Robbins',
+  },
+  {
+    text: 'Dreaming, after all, is a form of planning.',
+    from: 'Gloria Steinem',
+  },
+  {
+    text:
+      'It’s your place in the world; it’s your life. Go on and do all you can with it, and make it the life you want to live.',
+    from: 'Mae Jemison',
+  },
+  {
+    text:
+      'You may be disappointed if you fail, but you are doomed if you don’t try.',
+    from: 'Beverly Sills',
+  },
+  {
+    text: 'Remember no one can make you feel inferior without your consent.',
+    from: 'Eleanor Roosevelt',
+  },
+  {
+    text: 'Life is what we make it, always has been, always will be.',
+    from: 'Grandma Moses',
+  },
+  {
+    text:
+      'The question isn’t who is going to let me; it’s who is going to stop me.',
+    from: 'Ayn Rand',
+  },
+  {
+    text:
+      'When everything seems to be going against you, remember that the airplane takes off against the wind, not with it.',
+    from: 'Henry Ford',
+  },
+  {
+    text:
+      'It’s not the years in your life that count. It’s the life in your years.',
+    from: 'Abraham Lincoln',
+  },
+  {
+    text: 'Change your thoughts and you change your world.',
+    from: 'Norman Vincent Peale',
+  },
+  {
+    text: 'Either write something worth reading or do something worth writing.',
+    from: 'Benjamin Franklin',
+  },
+  {
+    text: 'Nothing is impossible, the word itself says, “I’m possible!”',
+    from: '–Audrey Hepburn',
+  },
+  {
+    text: 'The only way to do great work is to love what you do.',
+    from: 'Steve Jobs',
+  },
+  {
+    text: 'If you can dream it, you can achieve it.',
+    from: 'Zig Ziglar',
+  },
+];
+
+export const Love = [
+  {
+    text: 'love is shit !',
+    from: 'Ghali .B',
   },
 ];
