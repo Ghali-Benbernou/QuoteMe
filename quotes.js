@@ -1,5 +1,10 @@
 export const ALL = [
   {
+    text: 'Nothing is impossible, the word itself says, “I’m possible!”',
+    from: '–Audrey Hepburn',
+    img: 'https://telegram.org/file/811140508/1/0BiCdZ28uVw/ca64f37939b1bdea11',
+  },
+  {
     text: 'See your Today text , by Taping on the button !',
     from: 'Ghali .B',
     img:
@@ -59,6 +64,7 @@ export const ALL = [
     text:
       'You cannot depend on your eyes when your imagination is out of focus.',
     from: 'Mark Twain',
+    img: 'https://telegram.org/file/811140849/1/cpP6i93xxaA/c082e8a2ad59522cfd',
   },
   {
     text: 'Commitment leads to action. Action brings your dream closer.',
@@ -100,6 +106,7 @@ export const ALL = [
   {
     text: 'A leader is a dealer in hope.',
     from: 'Napoleon Bonaparte',
+    img: 'https://telegram.org/file/811140354/1/-NUBye754Pw/2fa1e3148047b624b3',
   },
   {
     text: 'While a good leader sustains momentum, a great leader increases it.',
@@ -455,6 +462,7 @@ export const ALL = [
     text:
       'Example is not the main thing in influencing other people; it’s the only thing',
     from: 'Abraham Lincoln',
+    img: 'https://telegram.org/file/811140066/1/7fM-CwKk4F0/53f9f1fc731c63547d',
   },
   {
     text:
@@ -465,6 +473,7 @@ export const ALL = [
     text:
       'Keep away from people who try to belittle your ambitions. Small people always do that, but the really great make you feel that you, too, can become great',
     from: 'Mark Twain',
+    img: 'https://telegram.org/file/811140849/1/cpP6i93xxaA/c082e8a2ad59522cfd',
   },
   {
     text: 'There is only one success',
@@ -590,6 +599,7 @@ export const ALL = [
     text:
       '“Example is not the main thing in influencing other people; it’s the only thing.',
     from: 'Abraham Lincoln',
+    img: 'https://telegram.org/file/811140066/1/7fM-CwKk4F0/53f9f1fc731c63547d',
   },
   {
     text: '“Leadership is doing what is right when no one is watching.',
@@ -659,6 +669,7 @@ export const ALL = [
     text:
       '“Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do.',
     from: 'Mark Twain',
+    img: 'https://telegram.org/file/811140849/1/cpP6i93xxaA/c082e8a2ad59522cfd',
   },
   {
     text:
@@ -862,6 +873,7 @@ export const ALL = [
     text:
       '“Keep away from people who try to belittle your ambitions. Small people always do that, but the really great make you feel that you, too, can become great.',
     from: 'Mark Twain',
+    img: 'https://telegram.org/file/811140849/1/cpP6i93xxaA/c082e8a2ad59522cfd',
   },
   {
     text:
@@ -1028,6 +1040,7 @@ export const ALL = [
     text:
       '“Remembering you are going to die is the best way I know to avoid the trap of thinking you have something to lose.',
     from: 'Steve Jobs',
+    img: 'https://telegram.org/file/811140823/2/gEXq-ZISs9g/55f6c9c9f87c4dceb0',
   },
   {
     text: '“It’s not about how to get started; its about how to get noticed.',
@@ -1070,6 +1083,7 @@ export const ALL = [
   {
     text: '“You won’t get anything unless you have the vision to imagine it.',
     from: 'John Lennon',
+    img: 'https://telegram.org/file/811140517/1/yDccYORy60c/da6c69de6ad5afcb8f',
   },
   {
     text:
@@ -1274,6 +1288,7 @@ export const ALL = [
     text:
       '“Twenty years from now, you will be more disappointed by the things that you didn’t do than by the ones you did do, so throw off the bowlines, sail away from safe harbor, catch the trade winds in your sails. Explore, Dream, Discover.',
     from: 'Mark Twain, from',
+    img: 'https://telegram.org/file/811140849/1/cpP6i93xxaA/c082e8a2ad59522cfd',
   },
   {
     text:
@@ -1551,6 +1566,7 @@ export const ALL = [
   {
     text: 'Life is what happens to you while you’re busy making other plans.',
     from: 'John Lennon',
+    img: 'https://telegram.org/file/811140517/1/yDccYORy60c/da6c69de6ad5afcb8f',
   },
   {
     text: 'We become what we think about.',
@@ -1560,6 +1576,7 @@ export const ALL = [
     text:
       'Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do, so throw off the bowlines, sail away from safe harbor, catch the trade winds in your sails.  Explore, Dream, Discover.',
     from: 'Mark Twain',
+    img: 'https://telegram.org/file/811140849/1/cpP6i93xxaA/c082e8a2ad59522cfd',
   },
   {
     text: 'Life is 10% what happens to me and 90% of how I react to it.',
@@ -1590,6 +1607,7 @@ export const ALL = [
   {
     text: 'Your time is limited, so don’t waste it living someone else’s life.',
     from: 'Steve Jobs',
+    img: 'https://telegram.org/file/811140823/2/gEXq-ZISs9g/55f6c9c9f87c4dceb0',
   },
   {
     text: 'Winning isn’t everything, but wanting to win is.',
@@ -1627,6 +1645,7 @@ export const ALL = [
     text:
       'The two most important days in your life are the day you are born and the day you find out why.',
     from: 'Mark Twain',
+    img: 'https://telegram.org/file/811140849/1/cpP6i93xxaA/c082e8a2ad59522cfd',
   },
   {
     text:
@@ -1711,6 +1730,7 @@ export const ALL = [
     text:
       'When I was 5 years old, my mother always told me that happiness was the key to life.  When I went to school, they asked me what I wanted to be when I grew up.  I wrote down ‘happy’.  They told me I didn’t understand the assignment, and I told them they didn’t understand life.',
     from: 'John Lennon',
+    img: 'https://telegram.org/file/811140517/1/yDccYORy60c/da6c69de6ad5afcb8f',
   },
   {
     text: 'Fall seven times and stand up eight.',
@@ -1939,6 +1959,7 @@ export const ALL = [
     text:
       'It’s not the years in your life that count. It’s the life in your years.',
     from: 'Abraham Lincoln',
+    img: 'https://telegram.org/file/811140066/1/7fM-CwKk4F0/53f9f1fc731c63547d',
   },
   {
     text: 'Change your thoughts and you change your world.',
@@ -1948,13 +1969,11 @@ export const ALL = [
     text: 'Either write something worth reading or do something worth writing.',
     from: 'Benjamin Franklin',
   },
-  {
-    text: 'Nothing is impossible, the word itself says, “I’m possible!”',
-    from: '–Audrey Hepburn',
-  },
+
   {
     text: 'The only way to do great work is to love what you do.',
     from: 'Steve Jobs',
+    img: 'https://telegram.org/file/811140823/2/gEXq-ZISs9g/55f6c9c9f87c4dceb0',
   },
   {
     text: 'If you can dream it, you can achieve it.',
