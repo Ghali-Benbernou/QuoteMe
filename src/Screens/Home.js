@@ -16,7 +16,17 @@ import {
   Dimensions,
 } from 'react-native';
 // import { DrawerNavigator } from 'react-navigation';
-import {ALL, Love} from '../../quotes';
+import {
+  ALL,
+  Emotional,
+  Entreprenaria,
+  Friendship,
+  Happiness,
+  Inspirational,
+  Love,
+  Motivational,
+  Wisdom,
+} from '../../quotes';
 
 import {styles} from '../../style';
 import SharingQuote from '../functions/SharingQuote';
@@ -66,15 +76,15 @@ export default function Home() {
             selectedValue={selectedValue}
             onValueChange={(itemValue) => setSelectedValue(itemValue)}>
             <Picker.Item label="ALL" value={ALL} />
-            <Picker.Item label="Love" value={Love} />
-            <Picker.Item label="Entreprenaria" value="Entreprenaria" />
-            <Picker.Item label="Emotional" value="Emotional" />
-            <Picker.Item label="Inspirational" value="Inspirational" />
-            <Picker.Item label="Motivational" value="Motivational" />
-            <Picker.Item label="Happiness" value="Happiness" />
-            <Picker.Item label="Wisdom" value="Wisdom" />
+            <Picker.Item label="love" value={Love} />
+            <Picker.Item label="Entreprenaria" value={Entreprenaria} />
+            <Picker.Item label="Emotional" value={Emotional} />
+            <Picker.Item label="Inspirational" value={Inspirational} />
+            <Picker.Item label="Motivational" value={Motivational} />
+            <Picker.Item label="Happiness" value={Happiness} />
+            <Picker.Item label="Wisdom" value={Wisdom} />
 
-            <Picker.Item label="Friendship" value="Friendship" />
+            <Picker.Item label="Friendship" value={Friendship} />
           </Picker>
         </View>
       </View>

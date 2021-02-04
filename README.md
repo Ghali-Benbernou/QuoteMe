@@ -5,7 +5,7 @@
 As my first introduction to React-Native I present to you my first app;
 A simple and fun react-native based, android mobile application, Generate famous personality quotes, copy them, and easily share them with your friends on social media!.
 
-![](img/scr_home.png) ![](img/scr_share.png)![](img/scr_menu.png)
+![](img/scr_home.png) ![](img/scr_share.png) ![](img/scr_menu.png)
 
 ## Contributing
 
