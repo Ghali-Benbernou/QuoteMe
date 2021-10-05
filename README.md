@@ -5,6 +5,10 @@
 As my first introduction to React-Native I present to you my first app;
 A simple and fun react-native based, android mobile application, Generate famous personality quotes, copy them, and easily share them with your friends on social media!.
 
+All personages images set can be found here:
+(<https://telegram.org/blog/stickers-meet-art-and-history>)
+(<https://telegram.org/blog/moar-stickers>)
+
 ![](img/scr_home.png) ![](img/scr_share.png) ![](img/scr_menu.png)
 
 ## Contributing
