@@ -1,8 +1,8 @@
-import {useNavigation} from '@react-navigation/native';
-import React, {useState} from 'react';
-import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import Ionicons from 'react-native-vector-icons/Ionicons';
-import {Picker} from '@react-native-picker/picker';
+import { useNavigation } from "@react-navigation/native";
+import React, { useState } from "react";
+import FontAwesome from "react-native-vector-icons/FontAwesome";
+import Ionicons from "react-native-vector-icons/Ionicons";
+import { Picker } from "@react-native-picker/picker";
 // import DropDownPicker from "react-native-custom-dropdown";
 import {
   Text,
@@ -14,7 +14,7 @@ import {
   TextInput,
   AppRegistry,
   Dimensions,
-} from 'react-native';
+} from "react-native";
 // import { DrawerNavigator } from 'react-navigation';
 import {
   ALL,
@@ -26,12 +26,12 @@ import {
   Love,
   Motivational,
   Wisdom,
-} from '../../quotes';
+} from "../../quotes";
 
-import {styles} from '../../style';
-import SharingQuote from '../functions/SharingQuote';
-import Navigations from '../Navigations';
-import {color} from 'react-native-reanimated';
+import { styles } from "../../style";
+import SharingQuote from "../functions/SharingQuote";
+import Navigations from "../Navigations";
+import { color } from "react-native-reanimated";
 // You can import from local files
 
 // import {quotes} from './quotes';
@@ -48,14 +48,14 @@ export default function Home() {
   const auth = selectedValue[numberholder].from;
   const img = selectedValue[numberholder].img;
 
-  const mainColor = '#111d5e';
+  const mainColor = "#111d5e";
   const navigation = useNavigation();
 
   return (
-    <View style={{flex: 1, backgroundColor: mainColor}}>
+    <View style={{ flex: 1, backgroundColor: mainColor }}>
       {/* Center View */}
-      <View style={{paddingVertical: 16, paddingHorizontal: 24}}>
-        <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
+      <View style={{ paddingVertical: 16, paddingHorizontal: 24 }}>
+        <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
           <TouchableOpacity
             onPress={() => {
               navigation.openDrawer();
@@ -66,15 +66,18 @@ export default function Home() {
           </TouchableOpacity>
 
           <Picker
-            dropdownIconColor={'white'}
+            dropdownIconColor={"white"}
             style={{
               height: 48,
               width: 112,
-              alignItems: 'center',
-              color: 'white',
+              alignItems: "center",
+              color: "white",
             }}
             selectedValue={selectedValue}
-            onValueChange={(itemValue) => setSelectedValue(itemValue)}>
+            onValueChange={(itemValue) => {
+              setSelectedValue(itemValue), setnumberholder(0);
+            }}
+          >
             <Picker.Item label="ALL" value={ALL} />
             <Picker.Item label="love" value={Love} />
             <Picker.Item label="Entreprenaria" value={Entreprenaria} />
@@ -89,64 +92,71 @@ export default function Home() {
         </View>
       </View>
 
-      <View style={{flex: 1, justifyContent: 'center', padding: 32}}>
+      <View style={{ flex: 1, justifyContent: "center", padding: 32 }}>
         <View>
           <Text style={styles.title}>Quote Me !</Text>
         </View>
         <View
           style={{
-            alignItems: 'center',
-            justifyContent: 'center',
+            alignItems: "center",
+            justifyContent: "center",
             paddingTop: 50,
-          }}>
-          <Image style={styles.image} source={{uri: img}} />
+          }}
+        >
+          <Image style={styles.image} source={{ uri: img }} />
         </View>
 
         <View
           style={{
-            height: '25%',
-            backgroundColor: 'white',
+            height: "25%",
+            backgroundColor: "white",
 
-            alignItems: 'center',
-            justifyContent: 'center',
+            alignItems: "center",
+            justifyContent: "center",
             borderRadius: 16,
             elevation: 4,
             padding: 24,
-          }}>
+          }}
+        >
           <ScrollView
             style={{
-              minHeight: '100%',
-            }}>
+              minHeight: "100%",
+            }}
+          >
             <View
               style={{
-                minHeight: '100%',
-                display: 'flex',
-                flexDirection: 'column',
-              }}>
+                minHeight: "100%",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
               <View
                 style={{
                   flex: 1,
-                }}>
+                }}
+              >
                 <Text
                   style={{
-                    textAlign: 'left',
-                    fontStyle: 'italic',
+                    textAlign: "left",
+                    fontStyle: "italic",
                     fontSize: 16,
                     lineHeight: 20,
-                    fontWeight: '500',
+                    fontWeight: "500",
                     // paddingVertical: 4,
-                  }}>
+                  }}
+                >
                   {quote}
                 </Text>
               </View>
               <Text
                 style={{
-                  textAlign: 'right',
-                  fontWeight: '400',
+                  textAlign: "right",
+                  fontWeight: "400",
                   fontSize: 14,
                   lineHeight: 20,
                   paddingTop: 8,
-                }}>
+                }}
+              >
                 - {auth}
               </Text>
             </View>
@@ -155,7 +165,7 @@ export default function Home() {
         <View>
           <SharingQuote quote={quote} auth={auth} />
         </View>
-        <View style={{height: 56, width: 1}}></View>
+        <View style={{ height: 56, width: 1 }}></View>
 
         {/* Bottom View */}
         <TouchableOpacity
@@ -163,28 +173,30 @@ export default function Home() {
             setnumberholder(numgenerator());
           }}
           style={{
-            backgroundColor: 'white',
+            backgroundColor: "white",
             height: 56,
             borderRadius: 16,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
             elevation: 4,
-          }}>
+          }}
+        >
           <Text
             style={{
               color: mainColor,
 
-              textAlign: 'left',
+              textAlign: "left",
 
               fontSize: 15,
               lineHeight: 20,
-              fontWeight: '500',
-            }}>
+              fontWeight: "500",
+            }}
+          >
             NEW QUOTE
           </Text>
         </TouchableOpacity>
-        <View style={{height: 24, width: 1}}></View>
+        <View style={{ height: 24, width: 1 }}></View>
       </View>
     </View>
   );
